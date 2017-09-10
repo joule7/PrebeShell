@@ -41,12 +41,12 @@ while [ "$intentos" != 3 ]; do
 		contra=$usuario$c$co	
 
 		if [[ $con == *$contra* ]];then 
-
+		#Despues del ingreso borramos la pantalla
 		printf "\033c"
-		echo -e -n "\e[32m..::PREBESHELL::..\e[00m" #parte del prompt
 		#Lectura y accion de Comandos
-		while [ "$comando"  != 'salir' ];do 
-		echo  -e -n "$usuario$PWD-->" #pwd nos muestra la ruta en que el usuario esta actualmente
+		while [ "$comando"  != 'salir' ];do
+		#Definicion de nuestro prompt
+		echo  -e -n "\e[32m..::PREBESHELL::..\e[00m$usuario$PWD-->" #pwd nos muestra la ruta en que el usuario esta actualmente
 		read  comando #Nuestra variable comparativa
 		if [ "$comando" == "arbol" ];then
 			echo -e "\n\e[32m..::Árbol::..\e[0m\n"
