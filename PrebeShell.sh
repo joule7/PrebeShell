@@ -73,10 +73,7 @@ while [ "$intentos" != 3 ]; do
 		else
 			$comando
 		fi
-		
-		*)
-			echo -e "\n$comando: no se reconoce la orden\n"
-		;;
+		done
 	else
 	echo -e "\nUsuario o contraseña incorrectos"
 	let intentos=$intentos+1 
