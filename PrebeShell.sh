@@ -44,7 +44,7 @@ while [ "$intentos" != 3 ]; do
 		printf "\033c"
 		#Lectura y accion de Comandos
 		while [ "$comando"  != 'salir' ];do 
-		echo  -e -n "$usuario$PWD-->"
+		echo  -e -n "$usuario$PWD-->" #pwd nos muestra la ruta en que el usuario esta actualmente
 		read  comando #Nuestra variable comparativa
 		if [ "$comando" == "arbol" ];then
 			#
