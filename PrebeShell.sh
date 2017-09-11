@@ -41,8 +41,7 @@ while [ "$intentos" != 3 ]; do
 		contra=$usuario$c$co	
 
 		if [[ $con == *$contra* ]];then 
-		#Despues del ingreso borramos la pantalla
-		printf "\033c"
+			printf "\033c"#Despues del ingreso borramos la pantalla
 		#Lectura y accion de Comandos
 		while [ "$comando"  != 'salir' ];do
 		#Definicion de nuestro prompt
@@ -58,7 +57,7 @@ while [ "$intentos" != 3 ]; do
 			echo -e "\e[32mhora:\e[0m Muestra la hora actual"
 			echo -e "\e[32mbuscar:\e[0m Busca un archivo escribir: archivo directorio"
 			echo -e "\e[32marbol:\e[0m Presenta una simulación del comando tree"
-			echo -e "\e[32mprebeplayer:\e[0m Reproductor PrebePlayer"
+			echo -e "\e[32mPrebePlayer:\e[0m Reproductor PrebePlayer"
 			echo -e "\e[32mGH:\e[0m Guitar Hero (juego)"
 			echo -e "\e[32mjuego2:\e[0m Juego 2"
 			echo -e "\e[32mcreditos:\e[0m Nombre de los programadores"
@@ -99,12 +98,12 @@ while [ "$intentos" != 3 ]; do
 			cd /bin/bash ./GH.sh
 		elif [ "$comando" == "juego2" ];then
 			cd /bin/bash ./juego2.sh
-		elif [ "$comando" == "prebeplayer" ];then
-			cd /bin/bash ./prebeplayer.sh
+		elif [ "$comando" == "PrebePlayer" ];then
+			cd /bin/bash ./PrebePlayer.sh
 		elif [ "$comando" == "creditos" ];then
 			echo -e "\n\e[32m..::Créditos::..\e[0m\n"
-			echo -e "Gueva Eduardo"
-			echo -e "Martinez Troncoso Julio Cesar\n"
+			echo -e "Guevara López Eduardo"
+			echo -e "Martínez Troncoso Julio César\n"
 		elif [ "$comando" == "cls" ];then
 			printf "\033c"
 		elif [ "$comando" == "salir" ];then
