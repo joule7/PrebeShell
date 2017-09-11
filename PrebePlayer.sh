@@ -53,7 +53,7 @@ else
 			clear
 		;;
 		3) 
-			echo -e "\n\e[32m..::Opciones de reproducción::..\e[0m\n\n\e[32m[s]\e[0m Pausa\n\e[32m[f]\e[0m Siguiente\n\e[32m[d]\e[0m Anterior\n\e[32m[b]\e[0m Repetir\n\e[32m[.]\e[0m Adelante\n\e[32m[,]\e[0m Atrás\n\e[32m[+]\e[0m Volumen Arriba\n\e[32m[-]\e[0m Volumen Abajo\n\e[32m[q]\e[0m Quitar reproducción\n\e[32m[h]\e[0m Más opciones mpg123\n"
+			echo -e "\n\e[32m..::Opciones de reproducción::..\e[0m\n\n\e[32m[s]\e[0m Pausa\n\e[32m[f]\e[0m La Siguiente\n\e[32m[d]\e[0m La Anterior\n\e[32m[b]\e[0m Repitela!\n\e[32m[.]\e[0m Adelante\n\e[32m[,]\e[0m Atrás\n\e[32m[+]\e[0m Subele, esto se va a descontrolar!\n\e[32m[-]\e[0m Bajale!, que pena wey\n\e[32m[q]\e[0m Quita todo alv\n\e[32m[h]\e[0m Más opciones mpg123\n"
 			echo -e "\E[1;32m	\nPresione una tecla para continuar..."
 			read
 			clear
