@@ -96,8 +96,8 @@ while [ "$intentos" != 3 ]; do
 			echo "funcion comando buscar en proceso"
 		elif [ "$comando" == "GH" ];then
 			cd /bin/bash ./GH.sh
-		elif [ "$comando" == "juego2" ];then
-			cd /bin/bash ./juego2.sh
+		elif [ "$comando" == "gato" ];then
+			cd /bin/bash ./gato.sh
 		elif [ "$comando" == "PrebePlayer" ];then
 			cd /bin/bash ./PrebePlayer.sh
 		elif [ "$comando" == "creditos" ];then
