@@ -3,7 +3,7 @@ function cambioruta(){
 	read nruta
 	cd "$nruta"
 }
-printf "\033c"		#cls
+printf "\033c" #limpiamos pantalla
 
 while [ "$menu" != "5" ];do
 ConfirmInstall=$(dpkg --get-selections | grep -w mpg123 | grep -w install)
@@ -47,9 +47,9 @@ else
 		 	clear
 		;;
 		2)
-			echo "Nombra la cancion que quieres escuchar: (cancion.mp3)"
-            read esta
-            mpg123 $esta
+			echo -e "\n\e[32m..::Nombra la cancion que quieres escuchar::..\e[0m(cancion.mp3)"
+            		read esta
+            		mpg123 $esta
 			clear
 		;;
 		3) 
