@@ -93,7 +93,16 @@ while [ "$intentos" != 3 ]; do
 			echo -e "\n\e[32m..::Hora::..\e[0m"
 			date "+%nLa hora es: %H:%M:%S%n"
 		elif [ "$comando" == "buscar" ];then
-			echo "funcion comando buscar en proceso"
+			echo -e "Archivo a buscar"
+			read a
+			echo -e "Directorio"
+			read d 
+			if ls $d | egrep $a
+			then 
+				echo "Su archivo: ls $a | egrep $a"
+			else
+				echo "No se encontro"
+			fi
 		elif [ "$comando" == "GH" ];then
 			cd $dir
 			/bin/bash ./GH.sh
