@@ -190,12 +190,23 @@ function instruc()
 
 }
 
+function reinic()
+{
+tecla=77
+punt=0
+vel=3
+ban=0
+sal=0
+op=0
+}
+
 while [ "$sal" == 0 ];do
 
 	case $op in
 	0) impPort
 	;;
-	1) juego
+	1) reinic
+	juego
 	;;
 	2) instruc
 	;;
