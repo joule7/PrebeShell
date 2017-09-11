@@ -15,7 +15,6 @@ if [ "$ConfirmInstall" = "" ]; then
 		echo -e "\n\e[32m..::mpg123 instalado::..\e[0m\n"
 	elif [ "$respuesta" == "no" ];then
     	echo -e "\n\e[32m..::Adios::..\e[0m\n"
-    	#menu = 7;
     else
     	echo -e "respuesta no valida"
 	fi
