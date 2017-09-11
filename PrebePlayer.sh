@@ -20,7 +20,7 @@ if [ "$ConfirmInstall" = "" ]; then
     	echo -e "respuesta no valida"
 	fi
 else
-    echo -e "\E[1;34m   _|_|_|                        _|                "
+    	echo -e "\E[1;34m   _|_|_|                        _|                "
  	echo -e "\E[1;34m   _|    _|  _|  _|_|    _|_|    _|_|_|      _|_|  "
  	echo -e "\E[1;34m   _|_|_|    _|_|      _|_|_|_|  _|    _|  _|_|_|_|"
  	echo -e "\E[1;34m   _|        _|        _|        _|    _|  _|      "
