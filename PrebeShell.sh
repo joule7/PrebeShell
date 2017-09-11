@@ -45,7 +45,7 @@ while [ "$intentos" != 3 ]; do
 		#Lectura y accion de Comandos
 		while [ "$comando"  != 'salir' ];do
 		#Definicion de nuestro prompt
-		echo  -e -n "\e[32m..::PREBESHELL::..\e[00m$usuario$PWD-->" #pwd nos muestra la ruta en que el usuario esta actualmente
+		echo  -e -n "\e[32m..::PREBESHELL::..\e[00m\e[34m$USER\e[00m$PWD-->" #pwd nos muestra la ruta en que el usuario esta actualmente
 		read  comando #Nuestra variable comparativa
 		if [ "$comando" == "arbol" ];then
 			echo -e "\n\e[32m..::Árbol::..\e[0m\n"
