@@ -5,7 +5,7 @@
 #Impedimos salir con Ctrl-z y Ctrl-c
 trap 'salir' 2 20
 trap 'salir' SIGTSTP
-
+dir=$PWD
 salir()
 {
 	echo -e "\nNo sirve tal accion, escriba: salir -> termina el programa"
@@ -59,7 +59,7 @@ while [ "$intentos" != 3 ]; do
 			echo -e "\e[32marbol:\e[0m Presenta una simulación del comando tree"
 			echo -e "\e[32mPrebePlayer:\e[0m Reproductor PrebePlayer"
 			echo -e "\e[32mGH:\e[0m Guitar Hero (juego)"
-			echo -e "\e[32mjuego2:\e[0m Juego 2"
+			echo -e "\e[32mGato:\e[0m Gato (juego)"
 			echo -e "\e[32mcreditos:\e[0m Nombre de los programadores"
 			echo -e "\e[32mcls:\e[0m limpia la pantalla\n"
 		elif [ "$comando" == "infosis" ];then
@@ -95,11 +95,14 @@ while [ "$intentos" != 3 ]; do
 		elif [ "$comando" == "buscar" ];then
 			echo "funcion comando buscar en proceso"
 		elif [ "$comando" == "GH" ];then
-			cd /bin/bash ./GH.sh
+			cd $dir
+			/bin/bash ./GH.sh
 		elif [ "$comando" == "gato" ];then
-			cd /bin/bash ./gato.sh
+			cd $dir
+			/bin/bash ./gato.sh
 		elif [ "$comando" == "PrebePlayer" ];then
-			cd /bin/bash ./PrebePlayer.sh
+			cd $dir
+			/bin/bash ./PrebePlayer.sh
 		elif [ "$comando" == "creditos" ];then
 			echo -e "\n\e[32m..::Créditos::..\e[0m\n"
 			echo -e "Guevara López Eduardo"
