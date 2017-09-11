@@ -59,7 +59,7 @@ while [ "$intentos" != 3 ]; do
 			echo -e "\e[32marbol:\e[0m Presenta una simulación del comando tree"
 			echo -e "\e[32mPrebePlayer:\e[0m Reproductor PrebePlayer"
 			echo -e "\e[32mGH:\e[0m Guitar Hero (juego)"
-			echo -e "\e[32mGato:\e[0m Gato (juego)"
+			echo -e "\e[32mgato:\e[0m Gato (juego)"
 			echo -e "\e[32mcreditos:\e[0m Nombre de los programadores"
 			echo -e "\e[32mcls:\e[0m limpia la pantalla\n"
 		elif [ "$comando" == "infosis" ];then
