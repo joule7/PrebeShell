@@ -41,7 +41,7 @@ while [ "$intentos" != 3 ]; do
 		contra=$usuario$c$co	
 
 		if [[ $con == *$contra* ]];then 
-			printf "\033c"#Despues del ingreso borramos la pantalla
+			printf "\033c" #Despues del ingreso borramos la pantalla
 		#Lectura y accion de Comandos
 		while [ "$comando"  != 'salir' ];do
 		#Definicion de nuestro prompt
