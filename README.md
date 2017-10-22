@@ -1,5 +1,4 @@
-# Proyecto2_Linux
-PrebeShell interactiva
+# PrebeShell
 
 Autores: Guevara López Eduardo & Martínez Troncoso Julio César
 
