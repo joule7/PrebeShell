@@ -1,4 +1,5 @@
 # PrebeShell
+Shell interactiva realizada en lenguaje bash
 
 Autores: Guevara López Eduardo & Martínez Troncoso Julio César
 
